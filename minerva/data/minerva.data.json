@@ -1,0 +1,133 @@
+{
+    "sales": [
+      {
+        "id": 13,
+        "location": "Foundation",
+        "start": "2024-02-12T12:00:00",
+        "end": "2024-02-14T12:00:00",
+        "isSuper": false,
+        "items": [
+          "Plan: BoS medallion",
+          "Plan: Brotherhood recon jet pack",
+          "Plan: Emmett Mountain Disposal signs",
+          "Plan: Gauss minigun",
+          "Plan: Gauss pistol hardened receiver",
+          "Plan: Gauss pistol suppressed barrel",
+          "Plan: Gauss pistol vicious receiver",
+          "Plan: Hello neon sign",
+          "Plan: Plasma cutter"
+        ]
+    },{
+        "id": 14,
+        "location": "Crater",
+        "start": "2024-02-19T12:00:00",
+        "end": "2024-02-21T12:00:00",
+        "isSuper": false,
+        "items": [
+          "Plan: Enclave medallion",
+          "Plan: Floater Flamer Grenade",
+          "Plan: Hellstorm Missile Launcher Cryo Payload",
+          "Plan: Hellstorm Missile Launcher Napalm Payload",
+          "Plan: Hellstorm Missile Launcher Plasma Payload",
+          "Plan: Medical Malpractice",
+          "Plan: War Glaive",
+          "Plan: Water Well",
+          "Plan: Wendigo Tube"
+        ]
+    },{
+        "id": 15,
+        "location": "Fort Atlas",
+        "start": "2024-02-26T12:00:00",
+        "end": "2024-02-28T12:00:00",
+        "isSuper": false,
+        "items": [
+          "Plan: Covert scout armor mask",
+          "Plan: Covert scout armor chest piece",
+          "Plan: Covert scout armor left arm",
+          "Plan: Covert scout armor left leg",
+          "Plan: Covert scout armor right arm",
+          "Plan: Covert scout armor right leg",
+          "Plan: Crusader pistol cryo receiver",
+          "Plan: Crusader pistol fusion receiver",
+          "Plan: Crusader pistol pyro receiver",
+          "Plan: Open neon sign"
+        ]
+    },{
+            "id": 16,
+            "location": "The Whitespring",
+            "start": "2024-03-07T12:00:00",
+            "end": "2024-03-11T12:00:00",
+            "isSuper": true,
+            "items": [
+                "All items from sales 13 14 and 15, use !minerva SALE for more details (e.g. !minerva 13)"
+            ]
+        },{
+            "id": 17,
+            "location": "Foundation",
+            "start": "2024-03-18T12:00:00",
+            "end": "2024-03-20T12:00:00",
+            "isSuper": false,
+            "items": [
+                "Plan: Cattle prod",
+                "Plan: Chemist's backpack mod",
+                "Plan: Farmable dirt tiles",
+                "Plan: Gauss minigun gunner sights",
+                "Plan: Gauss minigun Tesla capacitor",
+                "Plan: Gauss minigun Tesla dynamo",
+                "Plan: Secret Service chest piece",
+                "Plan: Secret Service helmet",
+                "Plan: Secret Service left arm",
+                "Plan: Secret Service left leg",
+                "Plan: Secret Service right arm",
+                "Plan: Secret Service right leg",
+                "Plan: Super reactor",
+                "Plan: Sympto-Matic",
+                "Plan: War glaive"
+            ]
+        },{
+            "id": 18,
+            "location": "Crater",
+            "start": "2024-03-25T12:00:00",
+            "end": "2024-03-27T12:00:00",
+            "isSuper": false,
+            "items": [
+                "Plan: Dynamite",
+                "Plan: Floater gnasher grenade",
+                "Plan: Gauss pistol",
+                "Plan: Grocer's backpack mod",
+                "Plan: Resistant lining Secret Service underarmor",
+                "Plan: Scavenged solar panel",
+                "Plan: Sole Survivor",
+                "Plan: Strangler heart chest piece",
+                "Plan: Strangler heart helmet",
+                "Plan: Strangler heart left arm",
+                "Plan: Strangler heart left leg",
+                "Plan: Strangler heart right arm",
+                "Plan: Strangler heart right leg",
+                "Plan: Treated lining Secret Service underarmor"
+            ]
+        },{
+            "id": 19,
+            "location": "Fort Atlas",
+            "start": "2024-04-1T12:00:00",
+            "end": "2024-04-3T12:00:00",
+            "isSuper": false,
+            "items": [
+                "Plan: Chinese stealth armor",
+                "Plan: Chinese stealth helmet",
+                "Plan: Gauntlet",
+                "Plan: Hellfire Prototype Power Armor Paint",
+                "Plan: Mirelurk king tube",
+                "Plan: Secret Service jet pack armor",
+                "Plan: Secret Service pocketed armor limb",
+                "Plan: Secret Service pocketed armor torso",
+                "Plan: T-65 medic pump",
+                "Plan: T-65 overdrive servos",
+                "Plan: T-65 Stealth Boy",
+                "Plan: War glaive cryo blade",
+                "Plan: War glaive plasma blade"
+            ]
+        }
+    ]
+  }
+  

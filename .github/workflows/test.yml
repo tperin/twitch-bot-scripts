@@ -1,0 +1,54 @@
+name: Node CI
+
+on: [push]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: npm install, build, and test
+        run: |
+          npm install
+          npm run build --if-present
+          npm test
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v4
+        with:
+          name: code-coverage-report
+          path: tests
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        id: test-results
+        if: always()
+        with:
+          files: "tests/**/*.xml"
+      - name: Set badge color
+        shell: bash
+        run: |
+          case ${{ fromJSON( steps.test-results.outputs.json ).conclusion }} in
+            success)
+              echo "BADGE_COLOR=31c653" >> $GITHUB_ENV
+              ;;
+            failure)
+              echo "BADGE_COLOR=800000" >> $GITHUB_ENV
+              ;;
+            neutral)
+              echo "BADGE_COLOR=696969" >> $GITHUB_ENV
+              ;;
+          esac
+
+      - name: Create badge
+        uses: emibcn/badge-action@808173dd03e2f30c980d03ee49e181626088eee8
+        with:
+          label: Tests
+          status: '${{ fromJSON( steps.test-results.outputs.json ).formatted.stats.tests }} tests, ${{ fromJSON( steps.test-results.outputs.json ).formatted.stats.runs }} runs: ${{ fromJSON( steps.test-results.outputs.json ).conclusion }}'
+          color: ${{ env.BADGE_COLOR }}
+          path: badge.svg
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-without-markdown
+          path: |
+            badge.svg
